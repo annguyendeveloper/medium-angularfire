@@ -1,32 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { GroupByMapPipe } from '@shared/pipes/group-by-map.pipe';
-import { KeysPipe } from '@shared/pipes/keys.pipe';
-import { KeyToValuePipe } from '@shared/pipes/keyToValue.pipe';
-import { BytesPipe } from '@shared/pipes/bytes.pipe';
-import { SafeHtmlPipe } from '@shared/pipes/safeHtml.pipe';
+import { GroupByMapPipe } from './group-by-map.pipe';
+import { KeysPipe } from './keys.pipe';
+import { KeyToValuePipe } from './keyToValue.pipe';
+import { BytesPipe } from './bytes.pipe';
+import { SafeHtmlPipe } from './safeHtml.pipe';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   declarations: [
     GroupByMapPipe,
     KeysPipe,
     KeyToValuePipe,
     BytesPipe,
-    SafeHtmlPipe,
+    SafeHtmlPipe
   ],
-  exports: [
-    GroupByMapPipe,
-    KeysPipe,
-    KeyToValuePipe,
-    BytesPipe,
-    SafeHtmlPipe,
-  ],
+  exports: [GroupByMapPipe, KeysPipe, KeyToValuePipe, BytesPipe, SafeHtmlPipe],
   providers: []
 })
-
-export class PipesModule {
-}
+export class PipesModule {}

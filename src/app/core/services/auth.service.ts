@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { User } from '@core/models/user';
 
 import * as firebase from 'firebase/app';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -12,6 +11,7 @@ import { MessageService } from 'primeng/components/common/messageservice';
 
 import { Observable } from 'rxjs/Observable';
 import { switchMap } from 'rxjs/operators';
+import { User } from '../models/user';
 
 @Injectable()
 export class AuthService {

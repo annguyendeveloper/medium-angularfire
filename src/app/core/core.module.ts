@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireModule } from 'angularfire2';
-import { environment } from '@env/environment';
-import { AuthGuard } from '@core/services/auth-guard.service';
-import { AuthService } from '@core/services/auth.service';
 import { MessageService } from 'primeng/components/common/messageservice';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthGuard } from './services/auth-guard.service';
+import { AuthService } from './services/auth.service';
+import { environment } from '../../environments/environment';
 
 @NgModule({
   imports: [
