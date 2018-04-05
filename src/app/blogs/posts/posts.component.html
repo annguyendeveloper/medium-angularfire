@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <div class="form-group">
+    <input [(ngModel)]="title" placeholder="Title" class="form-control">
+  </div>
+  <div class="form-group">
+    <textarea [(ngModel)]="content" placeholder="Content" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <p-chips [(ngModel)]="tags"></p-chips>
+  </div>
+
+  <button class="btn btn-primary" (click)="createPost()" [disabled]="title?.length < 2 || title?.length > 200">
+    Create post
+  </button>
+  <hr>
+  <dl>
+    <ng-container *ngFor="let post of blogs$ | async as list">
+      <dt>{{ post.title }}</dt>
+      <dd>
+        <div class="row">
+          <div class="col">
+            <p class="mb-0">{{ post.content }}</p>
+            <div *ngIf="post.tags.length > 0">
+              <a href="#" class="badge badge-pill badge-secondary" *ngFor="let tag of post.tags"
+                 [routerLink]="['/blogs/tags', tag]" routerLinkActive="$router_link-active$">{{ tag }}</a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button (click)="deletePost(post.id)" type="button" class="btn btn-sm btn-danger">Delete</button>
+          </div>
+        </div>
+      </dd>
+    </ng-container>
+  </dl>
+</div>

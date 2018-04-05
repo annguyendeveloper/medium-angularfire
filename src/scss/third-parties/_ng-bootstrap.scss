@@ -1,0 +1,8 @@
+.ngb-dp-header,
+.ngb-dp-month {
+  .btn,
+  .btn-light {
+    outline-style: none !important;
+    @include box-shadow(none !important);
+  }
+}

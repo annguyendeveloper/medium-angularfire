@@ -1,0 +1,83 @@
+.ui-widget {
+  label {
+    margin-bottom: 0;
+  }
+}
+
+.ui-widget-content {
+  background-color: inherit;
+  color: inherit;
+  border-width: 0;
+}
+
+.ui-datascroller .ui-datascroller-content {
+  padding: 0;
+}
+
+.ui-multiselect {
+  .ui-multiselect-label {
+    margin-bottom: 0;
+  }
+}
+
+.input-group {
+  ngb-datepicker.dropdown-menu {
+    right: 0;
+    left: auto !important;
+  }
+}
+
+//
+// MultiSelect
+//
+.ui-multiselect {
+  display: block;
+
+  .ui-multiselect-label {
+    padding: $input-padding-y $input-padding-x;
+    font-size: $font-size-base;
+    line-height: $input-line-height;
+    color: $input-color;
+    background-color: $input-bg;
+    background-clip: padding-box;
+  }
+
+  .ui-multiselect-header {
+    @include flexbox;
+    @include align-items(center);
+
+    .ui-chkbox {
+      margin: 0;
+    }
+    .ui-inputtext {
+      padding-left: 30px;
+    }
+
+    .ui-multiselect-filter-container {
+      @include flex(1);
+      margin: 0 10px;
+
+      span.fa-search {
+        @include center(false, true);
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 30px;
+      }
+    }
+    .ui-multiselect-close {
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+
+      .fa-close:before {
+        content: fa-content($fa-var-times);
+      }
+    }
+  }
+}

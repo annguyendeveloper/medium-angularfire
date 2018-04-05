@@ -1,0 +1,23 @@
+//
+// =Core
+// --------------------------------------------------
+@import 'core';
+//
+// =Bootstrap
+// --------------------------------------------------
+@import 'custom-bootstrap';
+//
+// =Fontawesome
+// --------------------------------------------------
+@import 'third-parties/fontawesome/web-fonts-with-css/scss/fa-regular';
+@import 'third-parties/fontawesome/web-fonts-with-css/scss/fa-brands';
+@import 'third-parties/fontawesome/web-fonts-with-css/scss/fa-solid';
+@import 'third-parties/fontawesome/web-fonts-with-css/scss/fontawesome';
+//
+// =Third parties
+// --------------------------------------------------
+@import 'third-parties/primeng';
+
+.fa-close {
+  @extend .fa-times;
+}

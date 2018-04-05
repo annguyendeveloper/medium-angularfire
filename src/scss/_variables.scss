@@ -1,0 +1,61 @@
+$transition-base: all 0.3s ease;
+$transition-sm: all 0.5s ease;
+
+$text-shadow-base: 0 1px 4px rgba(0, 0, 0, 0.8);
+$box-shadow-base: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+$border-radius-base: 3px;
+
+$line: #dcdfe6;
+$text-color-fade: #999999;
+
+$bg-facebook: #3b5998;
+$bg-twitter: #3eacde;
+$bg-google: #4285f4;
+
+$bg-light: #f8f8f8;
+
+$enable-shadows: true;
+
+$avatar-sizes: (
+  xs: 24px,
+  sm: 30px,
+  md: 40px,
+  lg: 48px,
+  xl: 56px,
+  100: 100px,
+  200: 200px
+);
+
+$avatar-colors: (
+  a: $blue,
+  b: $indigo,
+  c: $purple,
+  d: $pink,
+  e: $red,
+  f: $orange,
+  g: $yellow,
+  h: $green,
+  i: $teal,
+  j: $cyan,
+  k: theme-color-level('primary', -2),
+  l: theme-color-level('secondary', -2),
+  m: theme-color-level('success', -2),
+  n: theme-color-level('info', -2),
+  o: theme-color-level('warning', -2),
+  p: theme-color-level('danger', -2),
+  q: theme-color-level('light', -2),
+  r: theme-color-level('dark', -2),
+  s: theme-color-level('primary', -2),
+  t: theme-color-level('secondary', -7),
+  u: theme-color-level('info', -7),
+  v: theme-color-level('primary', -7),
+  w: darken($teal, 7),
+  x: theme-color-level('danger', -7),
+  y: darken($cyan, 7),
+  z: theme-color-level('dark', 7)
+);
+
+$fa-font-path: '/assets/fonts/fontawesome/web-fonts-with-css/webfonts';
+
+$input-placeholder-color: $gray-500;
